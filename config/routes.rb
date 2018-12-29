@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'pages/about'
+  get 'pages/contact'
+  resources :posts
+  resources :services
+  resources :products
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root to: "home#index"
