@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Post Pic</th>
       <th>Title</th>
       <th>Subtitle</th>
       <th>Description</th>
@@ -15,9 +16,11 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <td><%= image_tag(post.post_picture) %></td>
         <td><%= post.title %></td>
         <td><%= post.subtitle %></td>
         <td><%= post.description %></td>
+
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>

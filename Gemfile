@@ -25,6 +25,9 @@ gem 'activeadmin'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem "figaro"
 
+# storage
+gem "aws-sdk-s3", require: false
+
 # email
 gem 'sendgrid-ruby'
 gem 'mail_form'
