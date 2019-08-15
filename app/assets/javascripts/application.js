@@ -16,3 +16,15 @@
 //= require materialize
 //= require turbolinks
 //= require_tree .
+
+ $(document).on('turbolinks:load', function(){
+
+	 $(document).ready(function() {
+	    var elems = document.querySelectorAll('.sidenav');
+	    var instances = M.Sidenav.init(elems, options);
+	    var options = {}
+	  });
+
+	 AOS.init();
+
+ })

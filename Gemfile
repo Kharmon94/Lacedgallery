@@ -23,6 +23,11 @@ gem 'devise'
 gem 'activeadmin'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+gem "figaro"
+
+# email
+gem 'sendgrid-ruby'
+gem 'mail_form'
 
 
 # Design
